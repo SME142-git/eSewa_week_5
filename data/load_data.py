@@ -11,7 +11,7 @@ class DataLoader:
         return cls._instance
 
     def load_data(self):
-        df = pd.read_csv('final_data.csv')
+        df = pd.read_csv('./final_data.csv')
         df['Date'] = pd.to_datetime(df['Date'], format='mixed')
         df.set_index('Date',inplace=True)
         self._df = df
