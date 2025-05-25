@@ -9,5 +9,4 @@ app.layout = create_layout()
 
 register_callbacks(app)
 
-if __name__ == '__main__':
-    app.run(debug=True)
+server = app.server  # Required for Render
